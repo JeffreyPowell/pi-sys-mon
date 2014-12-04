@@ -2,6 +2,8 @@
 
 /usr/bin/rrdtool graph /usr/local/scripts/git/pi-adc-mon/www/adc-volts-hour.png \
 --start -1h \
+--upper-limit 14 \
+--lower-limit 9 \
 --width 800 \
 --height 400 \
 DEF:chartdata=/usr/local/scripts/git/pi-adc-mon/data/adc-volts.rrd:data:AVERAGE \
@@ -23,7 +25,10 @@ LINE4:chartdata#AAFF00:"channel 1 (v)"
 --start -1d \
 --width 800 \
 --height 400 \
+--upper-limit 14 \
+--lower-limit 9 \
 DEF:chartdata=/usr/local/scripts/git/pi-adc-mon/data/adc-volts.rrd:data:AVERAGE \
-LINE4:chartdata#00FF00:"channel 1 (v)"
+AREA:chartdata#CCFFCC \
+LINE2:chartdata#00FF00:"channel 1 (v)"
 
 
