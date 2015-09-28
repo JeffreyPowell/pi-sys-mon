@@ -13,6 +13,6 @@ RRA:AVERAGE:0.5:5:8640 \
 RRA:AVERAGE:0.5:60:8760
 }
 
-LOAD=$( top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1}')
+LOAD=$( top -bn3 | grep "Cpu(s)" | tail -1 | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1}')
 
 /usr/bin/rrdtool update ~/bin/sys/data/data_cpu_load.rrd `date +"%s"`:$LOAD
