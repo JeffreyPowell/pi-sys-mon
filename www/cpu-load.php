@@ -29,8 +29,8 @@ function create_graph($output, $start, $title) {
     "--width=370",
     "DEF:a=/home/pi/bin/sys/data/data_cpu_load.rrd:load:AVERAGE",
     "CDEF:b=a,1,*",
-    "LINE4:b#00FF00:CPU load",
-    "AREA:b#AAFFAA",
+    "LINE1:b#FF0000:CPU load",
+ #   "AREA:b#AAFFAA",
     "COMMENT:\\n",
     "GPRINT:b:MIN:min %6.2lf",
     "GPRINT:b:MAX:max %6.2lf"
