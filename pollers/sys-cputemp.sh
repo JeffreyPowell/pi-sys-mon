@@ -1,13 +1,13 @@
- #!/bin/bash
+#!/bin/bash
 #
 # update .rrd database with CPU temperature
-#
-# $Id: update_cputemp 275 2013-05-16 05:20:56Z lenik $
 
 
+
+FILENAME="/home/pi/bin/sys/data/sys-cputemps.rrd"
 # create database if not exists
-[ -f ~/bin/sys/data/cpu-temp.rrd ] || {
-/usr/bin/rrdtool create ~/bin/sys/data/cpu-temp.rrd \
+[ -f $FILENAME ] || {
+/usr/bin/rrdtool create $FILENAME \
 --step 60 \
 --start now \
 DS:data:GAUGE:120:U:U \

@@ -1,8 +1,7 @@
 #!/bin/bash
-#
-#
 
-FILENAME="/home/pi/bin/sys/data/cpu-load.rrd"
+
+FILENAME="/home/pi/bin/sys/data/sys-cpuload.rrd"
 # create database if not exists
 [ -f $FILENAME ] || {
 /usr/bin/rrdtool create $FILENAME \

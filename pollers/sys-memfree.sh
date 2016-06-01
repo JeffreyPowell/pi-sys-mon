@@ -1,7 +1,8 @@
 #!/bin/bash
 #
 #
-RRDFILE="/home/pi/bin/sys/data/mem-free.rrd"
+
+RRDFILE="/home/pi/bin/sys/data/sys-memfree.rrd"
 
 # create database if not exists
 [ -f $RRDFILE ] || {

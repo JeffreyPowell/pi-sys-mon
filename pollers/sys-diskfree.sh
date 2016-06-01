@@ -2,7 +2,7 @@
 #
 #
 
-RRDFILE="/home/pi/bin/sys/data/disk-free.rrd"
+RRDFILE="/home/pi/bin/sys/data/sys-diskfree.rrd"
 
 # create database if not exists
 [ -f $RRDFILE ] || {

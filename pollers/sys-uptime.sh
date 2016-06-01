@@ -2,7 +2,7 @@
 #
 #
 
-RRDFILE="/home/pi/bin/sys/data/uptime.rrd"
+RRDFILE="/home/pi/bin/sys/data/sys-uptime.rrd"
 
 # create database if not exists
 [ -f $RRDFILE ] || {

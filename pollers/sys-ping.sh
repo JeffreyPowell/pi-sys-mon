@@ -2,7 +2,7 @@
 #
 #
 
-RRDFILE="/home/pi/bin/sys/data/ping.rrd"
+RRDFILE="/home/pi/bin/sys/data/sys-ping.rrd"
 
 # create database if not exists
 [ -f $RRDFILE ] || {
