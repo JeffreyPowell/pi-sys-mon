@@ -24,13 +24,13 @@ $colpingline="4444FFFF"; $colpingarea="4444FF20";
 create_graph1("sys-cpuload", "images/d-cpuload-1d.png", "-1d", "CPU Load",    "%",      "AVERAGE", $width, $height, $colcpuloadline, $colcpuloadarea);
 create_graph1("sys-cpuload", "images/d-cpuload-1w.png", "-1w", "CPU Load",    "%",      "AVERAGE", $width, $height, $colcpuloadline, $colcpuloadarea);
 create_graph1("sys-cpuload", "images/d-cpuload-1m.png", "-1m", "CPU Load",    "%",      "AVERAGE", $width, $height, $colcpuloadline, $colcpuloadarea);
-create_graph1("sys-cpuload", "images/d-cpuload-1y.png", "-1y", "CPU Load",    "%",      "AVERAGE", $width, $height, $colcpuloadline, $colcpuloadarea);
+#create_graph1("sys-cpuload", "images/d-cpuload-1y.png", "-1y", "CPU Load",    "%",      "AVERAGE", $width, $height, $colcpuloadline, $colcpuloadarea);
 
 #create_graph1("cpu-temp", "images/d-cpu-temp-1h.png", "-1h", "CPU Temp",    "Deg. C", "AVERAGE", $width, $height, $colcputempline, $colcputemparea);
 create_graph1("sys-cputemp", "images/d-cputemp-1d.png", "-1d", "CPU Temp",    "Deg. C", "AVERAGE", $width, $height, $colcputempline, $colcputemparea);
 create_graph1("sys-cputemp", "images/d-cputemp-1w.png", "-1w", "CPU Temp",    "Deg. C", "AVERAGE", $width, $height, $colcputempline, $colcputemparea);
 create_graph1("sys-cputemp", "images/d-cputemp-1m.png", "-1m", "CPU Temp",    "Deg. C", "AVERAGE", $width, $height, $colcputempline, $colcputemparea);
-create_graph1("sys-cputemp", "images/d-cputemp-1y.png", "-1y", "CPU Temp",    "Deg. C", "AVERAGE", $width, $height, $colcputempline, $colcputemparea);
+#create_graph1("sys-cputemp", "images/d-cputemp-1y.png", "-1y", "CPU Temp",    "Deg. C", "AVERAGE", $width, $height, $colcputempline, $colcputemparea);
 
 #create_graph1("mem-free", "images/d-mem-free-1h.png", "-1h", "Free Memory", "% free", "AVERAGE", $width, $height, $colmemfreeline, $colmemfreearea);
 create_graph1("sys-memfree", "images/d-memfree-1d.png", "-1d", "Free Memory", "% free", "AVERAGE", $width, $height, "00FF00", "AAFFAA80");
@@ -65,7 +65,7 @@ echo "<tr style='background:#F4F8F8;'>";
 echo "<td><img src='images/d-cpuload-1d.png'></td>";
 echo "<td><img src='images/d-cpuload-1w.png'></td>";
 echo "<td><img src='images/d-cpuload-1m.png'></td>";
-echo "<td><img src='images/d-cpuload-1y.png'></td>";
+#echo "<td><img src='images/d-cpuload-1y.png'></td>";
 echo "</tr>";
 echo "<tr><td>CPU Temperature</td></tr>";
 echo "<tr>";
