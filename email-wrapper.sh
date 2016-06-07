@@ -1,12 +1,15 @@
 #!/bin/bash
 
+php /home/pi/bin/sys/www/dashboard.php
+
+STAMP=`date`
 # This needs heirloom-mailx
 #from="jffrypwll@pi-van"
 to="jffrypwll@googlemail.com"
-subject="rpi-van backups"
-body="Contents of /backups/*.tar.*"
+subject="rpi-van status"
+body="System Status @ $STAMP"
 declare -a attachments
-attachments=($( ls /home/pi/bin/sys/www/images/*.png ))
+attachments=($( ls /home/pi/bin/sys/www/images/*-1w.png ))
 #attachments={${ find /backups -maxdepth 1 -newermt $(date +%Y-%m-%d -d '1 day ago' ) -type f -print } }
 
 declare -a attargs
