@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This needs heirloom-mailx
-from="jffrypwll@pi-van"
+#from="jffrypwll@pi-van"
 to="jffrypwll@googlemail.com"
 subject="rpi-van sys"
 body="Contents of /backups/*.tar.*"
