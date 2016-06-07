@@ -3,7 +3,7 @@
 # This needs heirloom-mailx
 #from="jffrypwll@pi-van"
 to="jffrypwll@googlemail.com"
-subject="rpi-van sys"
+subject="rpi-van backups"
 body="Contents of /backups/*.tar.*"
 declare -a attachments
 attachments=($( ls /home/pi/bin/sys/www/images/*.png ))
