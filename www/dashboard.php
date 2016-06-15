@@ -44,9 +44,9 @@ create_graph6("sys-diskfree", "images/d-diskfree-1m.png", "-1m", "/        ","/d
 
 
 #create_graph1("uptime",   "images/d-uptime-1h.png",   "-1h", "Uptime",      "Time (Hrs)", "MAX", $width, $height, $coluptimeline, $coluptimearea);
-create_graph1("sys-uptime",   "images/d-uptime-1d.png",   "-1d", "Uptime",      "Time (Hrs)", "MAX", $width, $height, $coluptimeline, $coluptimearea);
-create_graph1("sys-uptime",   "images/d-uptime-1w.png",   "-1w", "Uptime",      "Time (Hrs)", "MAX", $width, $height, $coluptimeline, $coluptimearea);
-create_graph1("sys-uptime",   "images/d-uptime-1m.png",   "-1m", "Uptime",      "Time (Hrs)", "MAX", $width, $height, $coluptimeline, $coluptimearea);
+create_graph1("sys-uptime",   "images/d-uptime-1d.png",   "-1d", "Uptime",      "Time (Days)", "MAX", $width, $height, $coluptimeline, $coluptimearea);
+create_graph1("sys-uptime",   "images/d-uptime-1w.png",   "-1w", "Uptime",      "Time (Days)", "MAX", $width, $height, $coluptimeline, $coluptimearea);
+create_graph1("sys-uptime",   "images/d-uptime-1m.png",   "-1m", "Uptime",      "Time (Days)", "MAX", $width, $height, $coluptimeline, $coluptimearea);
 #create_graph1("uptime",   "images/d-uptime-1m.png",   "-1y", "Uptime",      "Time (Hrs)", "MAX", $width, $height, $coluptimeline, $coluptimearea);
 
 #create_graph1("ping", "images/d-ping-1h.png", "-1h", "Ping",    "ms",      "AVERAGE", $width, $height, $colpingline, $colpingarea);
