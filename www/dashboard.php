@@ -146,6 +146,7 @@ $legendpt=6;
     "LINE$linewidth:b#$linecol:$dataname",
 #    "COMMENT:\\n",
     "GPRINT:b:MIN:min %6.2lf",
+    "GPRINT:b:LAST:last %6.2lf\\n",
     "GPRINT:b:MAX:max %6.2lf\\n"
 );
 
