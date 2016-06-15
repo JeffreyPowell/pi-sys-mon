@@ -33,9 +33,9 @@ create_graph1("sys-cputemp", "images/d-cputemp-1m.png", "-1m", "CPU Temp",    "D
 #create_graph1("sys-cputemp", "images/d-cputemp-1y.png", "-1y", "CPU Temp",    "Deg. C", "AVERAGE", $width, $height, $colcputempline, $colcputemparea);
 
 #create_graph1("mem-free", "images/d-mem-free-1h.png", "-1h", "Free Memory", "% free", "AVERAGE", $width, $height, $colmemfreeline, $colmemfreearea);
-create_graph1("sys-memfree", "images/d-memfree-1d.png", "-1d", "Free Memory", "% free", "AVERAGE", $width, $height, "00FF00", "AAFFAA80");
-create_graph1("sys-memfree", "images/d-memfree-1w.png", "-1w", "Free Memory", "% free", "AVERAGE", $width, $height, "00FF00", "AAFFAA80");
-create_graph1("sys-memfree", "images/d-memfree-1m.png", "-1m", "Free Memory", "% free", "AVERAGE", $width, $height, "00FF00", "AAFFAA80");
+create_graph1("sys-memfree", "images/d-memfree-1d.png", "-1d", "Memory", "% used", "AVERAGE", $width, $height, "00FF00", "AAFFAA80");
+create_graph1("sys-memfree", "images/d-memfree-1w.png", "-1w", "Memory", "% used", "AVERAGE", $width, $height, "00FF00", "AAFFAA80");
+create_graph1("sys-memfree", "images/d-memfree-1m.png", "-1m", "Memory", "% used", "AVERAGE", $width, $height, "00FF00", "AAFFAA80");
 
 #create_graph6("disk-free", "images/d-disk-free-1h.png", "-1h", "/        ","/dev     ","/run     ","/run/lock","/run/shm ","/boot    ", "use %", "AVERAGE", $width, $height, $coldfl1, $coldfa1, $coldfl2, $coldfa2, $coldfl3, $coldfa3, $coldfl4, $coldfa4, $coldfl5, $coldfa5, $coldfl6, $coldfa6);
 create_graph6("sys-diskfree", "images/d-diskfree-1d.png", "-1d", "/        ","/dev     ","/run     ","/run/lock","/run/shm ","/boot    ", "use %", "AVERAGE", $width, $height, $coldfl1, $coldfa1, $coldfl2, $coldfa2, $coldfl3, $coldfa3, $coldfl4, $coldfa4, $coldfl5, $coldfa5, $coldfl6, $coldfa6);
