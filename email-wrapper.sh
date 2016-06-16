@@ -6,7 +6,7 @@ STAMP=`date`
 # This needs heirloom-mailx
 #from="jffrypwll@pi-van"
 to="jffrypwll@googlemail.com"
-subject="rpi-van status"
+subject="rpi-van status @ reboot + 5min"
 body="System Status @ $STAMP"
 declare -a attachments
 attachments=($( ls /home/pi/bin/sys/www/images/*-1w.png ))
