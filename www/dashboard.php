@@ -143,11 +143,11 @@ $legendpt=6;
     "DEF:a=/home/pi/bin/sys/data/$datafile.rrd:data:$datacf",
     "CDEF:b=a,1,*",
     "AREA:b#$areacol",
-    "LINE$linewidth:b#$linecol:$dataname",
+    "LINE$linewidth:b#$linecol:$dataname\\n",
 #    "COMMENT:\\n",
-    "GPRINT:b:MIN:min %6.2lf",
-    "GPRINT:b:LAST:last %6.2lf\\n",
-    "GPRINT:b:MAX:max %6.2lf\\n"
+    "GPRINT:b:MIN:min %6.2lf\\n",
+    "GPRINT:b:MAX:max %6.2lf\\n",
+    "GPRINT:b:LAST:last %6.2lf"
 );
 
  $ret = rrd_graph($output, $options);
