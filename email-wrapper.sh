@@ -6,10 +6,10 @@ STAMP=`date`
 # This needs heirloom-mailx
 #from="jffrypwll@pi-van"
 to="jffrypwll@googlemail.com"
-subject="rpi-van status"
+subject="rpi-van status @ restart + 5m"
 body="System Status @ $STAMP"
 declare -a attachments
-attachments=($( ls /home/pi/bin/sys/www/images/*-1w.png ))
+attachments=($( ls /home/pi/bin/sys/www/images/*.png ))
 #attachments={${ find /backups -maxdepth 1 -newermt $(date +%Y-%m-%d -d '1 day ago' ) -type f -print } }
 
 declare -a attargs
